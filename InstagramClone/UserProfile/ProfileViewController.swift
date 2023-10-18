@@ -103,8 +103,8 @@ class ProfileViewController: UICollectionViewController, UICollectionViewDelegat
         guard let uuid = Auth.auth().currentUser?.uid else { return }
         let dbRef = reference.child("/posts").child(uuid)
         
-        dbRef.observe(.childAdded) { snapshot in
-            guard let dictionary = snapshot.value as? [String: Any] else { return }
+        dbRef.queryOrdered(byChild: "created_at").observe(.childAdded) { snapshot in
+            guard let dictionary = snapshot.value as? [ String : Any ] else { return }
             let post = Post(dictionary)
             self.allPosts.append(post)
             self.collectionView.reloadData()
@@ -122,21 +122,6 @@ struct User {
     }
 }
 
-struct Post {
-    var created_at: String
-    var imageHeight: Int
-    var imageUrl: String
-    var imageWight: Int
-    var text: String
-    
-    init(_ dict: [String: Any]) {
-        self.created_at = dict["created_at"] as? String ?? ""
-        self.imageHeight = dict["imageHeight"] as? Int ?? 0
-        self.imageUrl = dict["imageUrl"] as? String ?? ""
-        self.imageWight = dict["imageWight"] as? Int ?? 0
-        self.text = dict["text"] as? String ?? ""
-    }
-}
 
 
 

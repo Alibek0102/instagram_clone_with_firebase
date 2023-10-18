@@ -62,7 +62,6 @@ class SharePhotoViewController: UIViewController {
         storageRef.putData(uploadData) { metadata, err in
             guard let _ = metadata else {
                 if(err != nil){
-                    print("err")
                     return
                 }
                 return
@@ -70,7 +69,6 @@ class SharePhotoViewController: UIViewController {
             storageRef.downloadURL { url, urlErr in
                 guard let url = url else {
                     if(urlErr != nil){
-                        print("download err")
                         return
                     }
                     return

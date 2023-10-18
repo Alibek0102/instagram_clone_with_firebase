@@ -2,22 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>727063318776-tssen5padn6leu3g2ec56f9h00j07roj.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.727063318776-tssen5padn6leu3g2ec56f9h00j07roj</string>
 	<key>API_KEY</key>
-	<string>AIzaSyC5ORV40lCmH0Ix-PQFnKE85OaYVB1Jth8</string>
+	<string>AIzaSyAnUqRvcBAGAEDQRHRdTS_nEem0JP7nvz0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>727063318776</string>
+	<string>130283095378</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>prod.InstagramClone</string>
 	<key>PROJECT_ID</key>
-	<string>instagramclone-6034e</string>
+	<string>instagramsecon</string>
 	<key>STORAGE_BUCKET</key>
-	<string>instagramclone-6034e.appspot.com</string>
+	<string>instagramsecon.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +25,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:727063318776:ios:631d4303c1220e5c8e2b0d</string>
+	<string>1:130283095378:ios:4f9fc296f12962b139268b</string>
+	<key>DATABASE_URL</key>
+	<string>https://instagramsecon-default-rtdb.europe-west1.firebasedatabase.app</string>
 </dict>
 </plist>

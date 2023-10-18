@@ -116,7 +116,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         Auth.auth().createUser(withEmail: email, password: password) { data, error in
             guard let data = data else {
                 if let error = error {
-                    print("Error &", error)
+                    print("Error & ", error)
                 }
                 return
             }

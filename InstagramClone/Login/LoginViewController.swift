@@ -90,7 +90,7 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { data, error in
             guard let _ = data else {
                 if let err = error {
-                    print(err)
+//                    print(err)
                 }
                 return
             }
